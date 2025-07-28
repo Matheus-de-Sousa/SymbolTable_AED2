@@ -1,0 +1,52 @@
+ public static void HashTable_main(String[] args) {
+        HashTableTS SymTable = new HashTableTS();
+        Symbol s1 = new Symbol("A","int",1,1);
+        Symbol s2 = new Symbol("B","int2",1,1);
+        Symbol s3 = new Symbol("C","int3",1,1);
+        Symbol s4 = new Symbol("D","int4",1,1);
+        Symbol s5 = new Symbol("E","int5",1,1);
+        SymTable.put(s1);
+        SymTable.put(s2);
+        SymTable.put(s3);
+        SymTable.put(s4);
+        SymTable.put(s5);
+        System.out.println("Before Deletion: ");
+        Symbol Test = SymTable.get("B");
+        System.out.println("TS Get: " + Test.name);
+        Test = SymTable.remove("C");
+        System.out.println("TS Remove: " + Test.name);
+        Test = SymTable.get("C");
+        if(Test != null)
+        {System.out.println("TS Get: " + Test.name);}
+        else
+        {
+        	System.out.println("null:"); 
+        }
+        System.out.println("After Deletion: ");
+ 
+    } 
+    
+     
+ public static void AVLTreeTS_main(String[] args) {
+        AVLTreeTS tree = new AVLTreeTS();
+        Symbol s1 = new Symbol("A","int",1,1);
+        Symbol s2 = new Symbol("B","int",1,1);
+        Symbol s3 = new Symbol("C","int",1,1);
+        Symbol s4 = new Symbol("D","int",1,1);
+        Symbol s5 = new Symbol("E","int",1,1);
+        tree.root = tree.insertNode(tree.root, s1);
+        tree.root = tree.insertNode(tree.root, s2);
+        tree.root = tree.insertNode(tree.root, s3);
+        tree.root = tree.insertNode(tree.root, s4);
+        tree.root = tree.insertNode(tree.root, s5);
+        //tree.root = tree.insertNode(tree.root, 63);
+        //tree.root = tree.insertNode(tree.root, 98);
+
+        System.out.println("Before Deletion: ");
+        tree.printTree(tree.root, "", true);
+        
+        tree.root = tree.deleteNode(tree.root, s3);
+        System.out.println("After Deletion: ");
+        tree.printTree(tree.root, "", true);
+ 
+    }
