@@ -238,3 +238,7 @@ Tempo total (AVL Tree): 16 us
 - Necessita manter os símbolos ordenados
 - O pseudocódigo tem escopos aninhados
 - Quer garantia de desempenho no pior caso
+
+## Referências para os códigos
+* [Base para o código da estrutura AVLTree](https://www.scholarhat.com/tutorial/datastructures/avl-tree-in-data-structures)
+* [Base para o código da estrutura HashTable](https://joaoarthurbm.github.io/eda/posts/hashtable/)
