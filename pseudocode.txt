@@ -1,0 +1,31 @@
+String nome;
+int idade;
+double altura;
+boolean ativo;
+char sexo;
+
+// Entrada de dados
+nome = "João Silva";
+idade = 30;
+altura = 1.75;
+sexo = 'M';
+ativo = true;
+
+// Validação
+if (idade < 18) {
+    (nome + " é menor de idade");
+} else if (altura > 1.60) {
+    (nome + " tem altura acima da média");
+}
+
+// Processamento
+int anosContribuicao = 5;
+double salarioBase = 2500.00;
+
+// Erro: variável não declarada
+salarioFinal = salarioBase * (1 + anosContribuicao * 0.05);
+
+// Uso em expressão complexa
+if (ativo && (sexo == 'M' || sexo == 'F')) {
+    ("Cadastro ativo");
+}

@@ -1,0 +1,88 @@
+// =========== SEÇÃO 1: DECLARAÇÕES INICIAIS ===========
+int quantidadeProdutoA;
+int quantidadeProdutoB;
+int quantidadeProdutoC;
+double precoBaseA;
+double precoBaseB;
+double precoBaseC;
+float descontoFidelidade;
+boolean clientePremium;
+char categoriaCliente;
+int diasUltimaCompra;
+
+// =========== SEÇÃO 2: INICIALIZAÇÃO ===========
+quantidadeProdutoA = 150;
+quantidadeProdutoB = 75;
+quantidadeProdutoC = 200;
+precoBaseA = 29.90;
+precoBaseB = 49.99;
+precoBaseC = 19.50;
+clientePremium = true;
+categoriaCliente = 'G';
+diasUltimaCompra = 15;
+
+// =========== SEÇÃO 3: CÁLCULO DE DESCONTOS ===========
+if (clientePremium && diasUltimaCompra < 30) {
+    if (categoriaCliente == 'P') {
+        descontoFidelidade = 0.25f;
+    } else if (categoriaCliente == 'G') {
+        descontoFidelidade = 0.15f;
+    } else {
+        descontoFidelidade = 0.1f;
+    }
+} else {
+    descontoFidelidade = 0.05f;
+}
+
+// =========== SEÇÃO 4: ATUALIZAÇÃO DE PREÇOS ===========
+double precoFinalA = precoBaseA * (1 - descontoFidelidade);
+double precoFinalB = precoBaseB * (1 - descontoFidelidade);
+double precoFinalC = precoBaseC * (1 - descontoFidelidade);
+
+// =========== SEÇÃO 5: CONTROLE DE ESTOQUE ===========
+int estoqueTotal = quantidadeProdutoA + quantidadeProdutoB + quantidadeProdutoC;
+boolean necessitaReposicao = estoqueTotal < 500;
+
+if (necessitaReposicao) {
+    int pedidoMinimo = 300 - estoqueTotal;
+    double custoReposicao = pedidoMinimo * (precoBaseA + precoBaseB + precoBaseC) / 3;
+    
+    // Variáveis não declaradas (ERROS DELIBERADOS)
+    taxaImportacao = custoReposicao * 0.2;
+    valorFrete = 150.0;
+    custoTotal = custoReposicao + taxaImportacao + valorFrete;
+}
+
+// =========== SEÇÃO 6: RELATÓRIO FINAL ===========
+double valorEstoqueA = quantidadeProdutoA * precoFinalA;
+double valorEstoqueB = quantidadeProdutoB * precoFinalB;
+double valorEstoqueC = quantidadeProdutoC * precoFinalC;
+double valorTotalEstoque = valorEstoqueA + valorEstoqueB + valorEstoqueC;
+
+// Mais variáveis não declaradas
+margemLucro = valorTotalEstoque * 0.3;
+valorImposto = valorTotalEstoque * 0.15;
+liquido = valorTotalEstoque - valorImposto;
+
+// =========== SEÇÃO 7: ALERTAS ===========
+if (quantidadeProdutoA < 50 || quantidadeProdutoB < 30 || quantidadeProdutoC < 100) {
+    boolean alertaCritico = true;
+    char prioridadeReposicao;
+    
+    if (quantidadeProdutoA < 20 || quantidadeProdutoB < 15 || quantidadeProdutoC < 50) {
+        prioridadeReposicao = 'A';
+    } else {
+        prioridadeReposicao = 'B';
+    }
+    
+    // Variável não declarada
+    tempoReposicao = prioridadeReposicao == 'A' ? 24 : 48;
+}
+
+// =========== SEÇÃO 8: ATUALIZAÇÃO FINAL ===========
+quantidadeProdutoA = quantidadeProdutoA - 5;
+quantidadeProdutoB = quantidadeProdutoB - 3;
+quantidadeProdutoC = quantidadeProdutoC - 10;
+
+// Última variável não declarada
+estoqueAtualizado = quantidadeProdutoA + quantidadeProdutoB + quantidadeProdutoC;

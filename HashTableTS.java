@@ -2,6 +2,7 @@ package HashTableTSpack;
 import java.util.ArrayList;
 import java.util.Iterator;
 import Symbolpack.Symbol;
+import java.lang.Math;
 public class HashTableTS {
 
     private ArrayList<Symbol>[] tabela;
@@ -11,7 +12,7 @@ public class HashTableTS {
     }
     
     private int hash(String name) {
-        return (name.hashCode()) % this.tabela.length;
+        return (Math.abs(name.hashCode())) % this.tabela.length;
     }
     
     public Symbol get(String name) {

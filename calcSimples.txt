@@ -1,0 +1,17 @@
+int a;
+int b;
+int resultado;
+char operacao;
+
+a = 10;
+b = 5;
+operacao = '+';
+
+if (operacao == '+') {
+    resultado = a + b;
+} else if (operacao == '-') {
+    resultado = a - b;
+}
+
+// Variável não declarada
+total = resultado;

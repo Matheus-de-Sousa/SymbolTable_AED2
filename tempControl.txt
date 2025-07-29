@@ -1,0 +1,17 @@
+double temperatura;
+boolean ligado;
+int potencia;
+
+temperatura = 22.5;
+ligado = true;
+
+if (temperatura > 25.0) {
+    potencia = 2;
+} else if (temperatura < 20.0) {
+    potencia = 3;
+} else {
+    potencia = 1;
+}
+
+// Variável não declarada
+status = ligado;
