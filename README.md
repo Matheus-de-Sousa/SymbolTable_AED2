@@ -217,7 +217,7 @@ Total de buscas: 17
 Tempo total (AVL Tree): 16 us
 
 ```
-
+Mais casos de exemplos no arquivo exemplos.txt que utiliza como entrada os arquivos controleEstoque.txt, calcSimples.txt, tempControl.txt e pseudocode.txt
 ## Comparação de Desempenho
 
 | Métrica               | HashTable | AVL Tree | Observações                     |
