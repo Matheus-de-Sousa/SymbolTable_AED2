@@ -75,16 +75,16 @@ public class AVLTreeTS {
         }
         return node;
     }
-    public Node searchNode(Node root, Symbol item)
+    public Node searchNode(Node root, String name)
     {
     
-        if (root == null || root.item.name.compareTo(item.name) == 0)
+        if (root == null || root.item.name.compareTo(name) == 0)
             return root;
 
-        if (root.item.name.compareTo(item.name) < 0)
-            return searchNode(root.right, item);
+        if (root.item.name.compareTo(name) < 0)
+            return searchNode(root.right, name);
 
-        return searchNode(root.left, item);
+        return searchNode(root.left, name);
     	
     }
 
@@ -95,15 +95,15 @@ public class AVLTreeTS {
         return current;
     }
 
-    public Node deleteNode(Node root, Symbol item) {
+    public Node deleteNode(Node root, String name) {
 
         // Find the node to be deleted and remove it
         if (root == null)
             return root;
-        if (item.name.compareTo(root.item.name) < 0)
-            root.left = deleteNode(root.left, item);
-        else if (item.name.compareTo(root.item.name) > 0)
-            root.right = deleteNode(root.right, item);
+        if (name.compareTo(root.item.name) < 0)
+            root.left = deleteNode(root.left, name);
+        else if (name.compareTo(root.item.name) > 0)
+            root.right = deleteNode(root.right, name);
         else {
             if ((root.left == null) || (root.right == null)) {
                 Node temp = null;
@@ -119,7 +119,7 @@ public class AVLTreeTS {
             } else {
                 Node temp = nodeWithMinimumValue(root.right);
                 root.item = temp.item;
-                root.right = deleteNode(root.right, temp.item);
+                root.right = deleteNode(root.right, temp.item.name);
             }
         }
         if (root == null)
