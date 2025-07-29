@@ -1,0 +1,190 @@
+=== Executando com HashTable (controleEstoque.txt) ===
+Variável declarada - Linha 2: quantidadeProdutoA do tipo int
+Variável declarada - Linha 3: quantidadeProdutoB do tipo int
+Variável declarada - Linha 4: quantidadeProdutoC do tipo int
+Variável declarada - Linha 5: precoBaseA do tipo double
+Variável declarada - Linha 6: precoBaseB do tipo double
+Variável declarada - Linha 7: precoBaseC do tipo double
+Variável declarada - Linha 8: descontoFidelidade do tipo float
+Variável declarada - Linha 9: clientePremium do tipo boolean
+Variável declarada - Linha 10: categoriaCliente do tipo char
+Variável declarada - Linha 11: diasUltimaCompra do tipo int
+Variável declarada - Linha 38: precoFinalA do tipo double
+Variável declarada - Linha 39: precoFinalB do tipo double
+Variável declarada - Linha 40: precoFinalC do tipo double
+Variável declarada - Linha 43: estoqueTotal do tipo int
+Variável declarada - Linha 44: necessitaReposicao do tipo boolean
+Variável declarada - Linha 47: pedidoMinimo do tipo int
+Variável declarada - Linha 48: custoReposicao do tipo double
+ERRO - Linha 51: Variável 'taxaImportacao' não declarada
+ERRO - Linha 52: Variável 'valorFrete' não declarada
+ERRO - Linha 53: Variável 'custoTotal' não declarada
+ERRO - Linha 53: Variável 'taxaImportacao' não declarada
+ERRO - Linha 53: Variável 'valorFrete' não declarada
+Variável declarada - Linha 57: valorEstoqueA do tipo double
+Variável declarada - Linha 58: valorEstoqueB do tipo double
+Variável declarada - Linha 59: valorEstoqueC do tipo double
+Variável declarada - Linha 60: valorTotalEstoque do tipo double
+ERRO - Linha 63: Variável 'margemLucro' não declarada
+ERRO - Linha 64: Variável 'valorImposto' não declarada
+ERRO - Linha 65: Variável 'liquido' não declarada
+ERRO - Linha 65: Variável 'valorImposto' não declarada
+Variável declarada - Linha 69: alertaCritico do tipo boolean
+Variável declarada - Linha 70: prioridadeReposicao do tipo char
+ERRO - Linha 79: Variável 'tempoReposicao' não declarada
+ERRO - Linha 88: Variável 'estoqueAtualizado' não declarada
+
+=== Relatório de Desempenho (HashTable) ===
+Tempo total de inserção: 54 us
+Tempo médio por inserção: 2369 ns
+Tempo total de busca: 173 us
+Tempo médio por busca: 1751 ns
+Total de inserções: 23
+Total de buscas: 99
+Tempo total (HashTable): 227 us
+
+=== Executando com AVL (controleEstoque.txt) ===
+Variável declarada - Linha 2: quantidadeProdutoA do tipo int
+Variável declarada - Linha 3: quantidadeProdutoB do tipo int
+Variável declarada - Linha 4: quantidadeProdutoC do tipo int
+Variável declarada - Linha 5: precoBaseA do tipo double
+Variável declarada - Linha 6: precoBaseB do tipo double
+Variável declarada - Linha 7: precoBaseC do tipo double
+Variável declarada - Linha 8: descontoFidelidade do tipo float
+Variável declarada - Linha 9: clientePremium do tipo boolean
+Variável declarada - Linha 10: categoriaCliente do tipo char
+Variável declarada - Linha 11: diasUltimaCompra do tipo int
+Variável declarada - Linha 38: precoFinalA do tipo double
+Variável declarada - Linha 39: precoFinalB do tipo double
+Variável declarada - Linha 40: precoFinalC do tipo double
+Variável declarada - Linha 43: estoqueTotal do tipo int
+Variável declarada - Linha 44: necessitaReposicao do tipo boolean
+Variável declarada - Linha 47: pedidoMinimo do tipo int
+Variável declarada - Linha 48: custoReposicao do tipo double
+ERRO - Linha 51: Variável 'taxaImportacao' não declarada
+ERRO - Linha 52: Variável 'valorFrete' não declarada
+ERRO - Linha 53: Variável 'custoTotal' não declarada
+ERRO - Linha 53: Variável 'taxaImportacao' não declarada
+ERRO - Linha 53: Variável 'valorFrete' não declarada
+Variável declarada - Linha 57: valorEstoqueA do tipo double
+Variável declarada - Linha 58: valorEstoqueB do tipo double
+Variável declarada - Linha 59: valorEstoqueC do tipo double
+Variável declarada - Linha 60: valorTotalEstoque do tipo double
+ERRO - Linha 63: Variável 'margemLucro' não declarada
+ERRO - Linha 64: Variável 'valorImposto' não declarada
+ERRO - Linha 65: Variável 'liquido' não declarada
+ERRO - Linha 65: Variável 'valorImposto' não declarada
+Variável declarada - Linha 69: alertaCritico do tipo boolean
+Variável declarada - Linha 70: prioridadeReposicao do tipo char
+ERRO - Linha 79: Variável 'tempoReposicao' não declarada
+ERRO - Linha 88: Variável 'estoqueAtualizado' não declarada
+
+=== Relatório de Desempenho (AVL Tree) ===
+Tempo total de inserção: 249 us
+Tempo médio por inserção: 10834 ns
+Tempo total de busca: 274 us
+Tempo médio por busca: 2775 ns
+Total de inserções: 23
+Total de buscas: 99
+Tempo total (AVL Tree): 523 us
+
+=== Executando com HashTable (calcSimples.txt) ===
+Variável declarada - Linha 1: a do tipo int
+Variável declarada - Linha 2: b do tipo int
+Variável declarada - Linha 3: resultado do tipo int
+Variável declarada - Linha 4: operacao do tipo char
+ERRO - Linha 17: Variável 'total' não declarada
+
+=== Relatório de Desempenho (HashTable) ===
+Tempo total de inserção: 8 us
+Tempo médio por inserção: 2060 ns
+Tempo total de busca: 19 us
+Tempo médio por busca: 1168 ns
+Total de inserções: 4
+Total de buscas: 17
+Tempo total (HashTable): 27 us
+
+=== Executando com AVL (calcSimples.txt) ===
+Variável declarada - Linha 1: a do tipo int
+Variável declarada - Linha 2: b do tipo int
+Variável declarada - Linha 3: resultado do tipo int
+Variável declarada - Linha 4: operacao do tipo char
+ERRO - Linha 17: Variável 'total' não declarada
+
+=== Relatório de Desempenho (AVL Tree) ===
+Tempo total de inserção: 5 us
+Tempo médio por inserção: 1348 ns
+Tempo total de busca: 11 us
+Tempo médio por busca: 661 ns
+Total de inserções: 4
+Total de buscas: 17
+Tempo total (AVL Tree): 16 us
+
+=== Executando com HashTable (tempControl.txt) ===
+Variável declarada - Linha 1: temperatura do tipo double
+Variável declarada - Linha 2: ligado do tipo boolean
+Variável declarada - Linha 3: potencia do tipo int
+ERRO - Linha 17: Variável 'status' não declarada
+
+=== Relatório de Desempenho (HashTable) ===
+Tempo total de inserção: 5 us
+Tempo médio por inserção: 1741 ns
+Tempo total de busca: 13 us
+Tempo médio por busca: 1164 ns
+Total de inserções: 3
+Total de buscas: 12
+Tempo total (HashTable): 18 us
+
+=== Executando com AVL (tempControl.txt) ===
+Variável declarada - Linha 1: temperatura do tipo double
+Variável declarada - Linha 2: ligado do tipo boolean
+Variável declarada - Linha 3: potencia do tipo int
+ERRO - Linha 17: Variável 'status' não declarada
+
+=== Relatório de Desempenho (AVL Tree) ===
+Tempo total de inserção: 4 us
+Tempo médio por inserção: 1524 ns
+Tempo total de busca: 7 us
+Tempo médio por busca: 614 ns
+Total de inserções: 3
+Total de buscas: 12
+Tempo total (AVL Tree): 11 us
+
+=== Executando com HashTable (pseudocode.txt) ===
+Variável declarada - Linha 1: nome do tipo String
+Variável declarada - Linha 2: idade do tipo int
+Variável declarada - Linha 3: altura do tipo double
+Variável declarada - Linha 4: ativo do tipo boolean
+Variável declarada - Linha 5: sexo do tipo char
+Variável declarada - Linha 22: anosContribuicao do tipo int
+Variável declarada - Linha 23: salarioBase do tipo double
+ERRO - Linha 26: Variável 'salarioFinal' não declarada
+
+=== Relatório de Desempenho (HashTable) ===
+Tempo total de inserção: 12 us
+Tempo médio por inserção: 1728 ns
+Tempo total de busca: 25 us
+Tempo médio por busca: 1166 ns
+Total de inserções: 7
+Total de buscas: 22
+Tempo total (HashTable): 37 us
+
+=== Executando com AVL (pseudocode.txt) ===
+Variável declarada - Linha 1: nome do tipo String
+Variável declarada - Linha 2: idade do tipo int
+Variável declarada - Linha 3: altura do tipo double
+Variável declarada - Linha 4: ativo do tipo boolean
+Variável declarada - Linha 5: sexo do tipo char
+Variável declarada - Linha 22: anosContribuicao do tipo int
+Variável declarada - Linha 23: salarioBase do tipo double
+ERRO - Linha 26: Variável 'salarioFinal' não declarada
+
+=== Relatório de Desempenho (AVL Tree) ===
+Tempo total de inserção: 21 us
+Tempo médio por inserção: 3117 ns
+Tempo total de busca: 16 us
+Tempo médio por busca: 748 ns
+Total de inserções: 7
+Total de buscas: 22
+Tempo total (AVL Tree): 37 us
+
