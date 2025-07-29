@@ -41,7 +41,7 @@ public class SymbolTable {
         tree.root = tree.insertNode(tree.root, s4);
         tree.root = tree.insertNode(tree.root, s5);
         
-        Node AVLTest = tree.searchNode(tree.root,s3);
+        Node AVLTest = tree.searchNode(tree.root,"C");
         if(AVLTest != null)
         {
         	System.out.println("Avl Search: " + AVLTest.item.name);
@@ -53,7 +53,7 @@ public class SymbolTable {
         System.out.println("Before Deletion: ");
         tree.printTree(tree.root, "", true);
         
-        tree.root = tree.deleteNode(tree.root, s3);
+        tree.root = tree.deleteNode(tree.root, "D");
         System.out.println("After Deletion: ");
         tree.printTree(tree.root, "", true);
   	}
